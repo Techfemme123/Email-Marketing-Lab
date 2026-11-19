@@ -21,7 +21,7 @@ If the folder does not exist, say so and list the folders that do.
 - Read `brand/voice.md`. Follow the voice, the words we use and avoid, and the claims we must never make.
 - Read `.claude/rules/emails.md`. Every version must still follow these rules.
 - Read `leads/leads.csv` and find the distinct values in the `group` column. Expect `tea-curious`, `gift-buyers` and `daily-drinkers`. Use the groups actually in the file. Never copy names or email addresses into the emails.
-- Use Glob to find every `*.md` file in `<campaign folder>/emails/`. Do not read or write inside any `groups/` folder.
+- Use Glob to find every `*.md` file in `<campaign folder>/emails/`. Do not use files inside any `groups/` folder as input.
 
 ## Step 3: Write the versions
 

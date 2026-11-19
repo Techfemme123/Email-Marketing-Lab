@@ -7,10 +7,10 @@ Preview: The Steep Club is open. A fresh, fragrant surprise, every month.
 
 Hello {{first_name}},
 
-You waited with us, and we are so glad you did. The Steep Club is open today, and your seat at the table is ready.
+You waited with us, friends, and we're so glad you did. The Steep Club is open today, and your seat at the table is ready.
 
 **What is The Steep Club?**
-It is a monthly tea box with a surprise inside. Every month, a magical box arrives with fresh, fragrant tea chosen by our team. Ilaichi (green cardamom) runs through the club like a warm thread, with an aroma that greets you before the first sip.
+It's a monthly tea box with a surprise inside. Every month, a magical box arrives with fresh, fragrant tea chosen by our team. Ilaichi (green cardamom) runs through the club like a warm thread, with an aroma that greets you before the first sip.
 
 **What is in the first box?**
 [TO CONFIRM: list what is in the first box]
@@ -19,16 +19,16 @@ It is a monthly tea box with a surprise inside. Every month, a magical box arriv
 [TO CONFIRM: monthly price and billing. Add a first-box offer only if it is real.]
 
 **How do you start?**
-It takes a few minutes. Press the button, choose your box, and you are in.
+It's quick. Press the button, choose your box, and you're in.
 
 [Join The Steep Club](https://kettlebird.example/steep-club)
 
-No tea knowledge needed. If you can boil a kettle, you are ready.
+No tea knowledge needed. If you can boil a kettle, you're ready.
 
 Until your next cup,
 Ara, from the Kettlebird team
 
 P.S. Crush the ilaichi pods before brewing. It lets the aroma out.
 
-You're getting this because you joined the Kettlebird Tea waitlist.
+You're getting this because you joined the Kettlebird Tea waitlist.  
 Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}

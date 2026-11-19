@@ -7,9 +7,9 @@ Preview: No rush. Just a warm invitation to The Steep Club.
 
 Hello {{first_name}},
 
-This is our last note about The Steep Club for now. We do not want to crowd your inbox, so we will keep it short.
+This is our last note about The Steep Club for now, friends. We don't want to crowd your inbox, so we'll keep it short.
 
-Since December, we have been sharing a magical box, a monthly surprise and the aroma of fresh ilaichi. If it caught your eye, we would love to have you.
+Since December, we have been telling you about the magical box, the monthly surprise and the aroma of fresh ilaichi. If it caught your eye, we'd love to have you.
 
 [TO CONFIRM: if there is a real close date for joining, state it here plainly. If there is not, keep this line:] There is no deadline from us. The door stays open, and you can join whenever you are ready.
 
@@ -22,5 +22,5 @@ Ara, from the Kettlebird team
 
 P.S. Warm your cup with a little hot water before you pour the tea. It keeps the aroma with you for longer.
 
-You're getting this because you joined the Kettlebird Tea waitlist.
+You're getting this because you joined the Kettlebird Tea waitlist.  
 Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}

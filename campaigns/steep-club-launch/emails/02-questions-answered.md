@@ -7,7 +7,7 @@ Preview: Price, billing, pausing and what to expect from The Steep Club.
 
 Hello {{first_name}},
 
-You had a look at The Steep Club, and you may have a question or two. Good. We would rather you ask than guess. Here are the ones we hear most.
+You may have a question or two about The Steep Club. Good. We'd rather you ask than guess. Put the kettle on, friends, and here are the ones we hear most.
 
 **What do I get each month?**
 One magical box with fresh, fragrant tea and a surprise inside. [TO CONFIRM: box contents]
@@ -22,7 +22,7 @@ One magical box with fresh, fragrant tea and a surprise inside. [TO CONFIRM: box
 [TO CONFIRM: first ship timing. Do not promise an exact delivery date.] We will always tell you when your box has been sent.
 
 **I am new to tea. Is this for me?**
-Yes. There are no wrong answers and nothing to learn first. You only need a kettle and a cup.
+Yes. There's nothing to learn first. You only need a kettle and a cup.
 
 **Is it a good gift?**
 It can be. [TO CONFIRM: gift option details]
@@ -36,5 +36,5 @@ Ara, from the Kettlebird team
 
 P.S. Let your kettle rest for a moment after it boils. Slightly cooler water is kinder to delicate leaves.
 
-You're getting this because you joined the Kettlebird Tea waitlist.
+You're getting this because you joined the Kettlebird Tea waitlist.  
 Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}

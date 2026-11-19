@@ -7,12 +7,12 @@ Preview: Fresh, fragrant tea and a little surprise, every month.
 
 Hello {{first_name}},
 
-Let us open the box together. 🍃
+Let's open the box together, friends. 🍃
 
-[ADD PHOTO: the box, the tea and the ilaichi pods. Use real photos only.]
+[ADD PHOTO: the box, the tea and the ilaichi pods. Use real photos only, and add short alt text.]
 
 **The surprise.**
-Each month, something new waits inside. We will not tell you what, because that is the fun of it. [TO CONFIRM: what the first box contains, if we can share it]
+Each month, something new waits inside. We won't tell you what, because that is the fun of it. [TO CONFIRM: what the first box contains, if we can share it]
 
 **The aroma.**
 Ilaichi is our favourite thread. Crack open a pod and the scent reaches you before the first sip. That is the aroma that touches the soul, and we want it in your kitchen every month.
@@ -27,7 +27,7 @@ If this sounds like your kind of morning, your seat is still waiting.
 Until your next cup,
 Ara, from the Kettlebird team
 
-P.S. Crush the ilaichi pods before brewing, then let them steep a little longer for a rounder aroma.
+P.S. Keep your ilaichi pods in a tightly closed tin. The aroma stays with them for longer.
 
-You're getting this because you joined the Kettlebird Tea waitlist.
+You're getting this because you joined the Kettlebird Tea waitlist.  
 Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}

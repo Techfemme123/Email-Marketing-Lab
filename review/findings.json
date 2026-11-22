@@ -1,0 +1,39 @@
+{
+  "findings": [
+    {
+      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
+      "line": 30,
+      "severity": "high",
+      "problem": "Promises a reply: \"just reply to this email and a real person will answer.\" Rule 9 bans reply promises unless the owner has confirmed them. The same line is in all 3 group versions (daily-drinkers, gift-buyers, tea-curious).",
+      "fix": "Get the owner to confirm someone monitors replies. If they can't, cut the line or change it to \"Still wondering? Take a look at The Steep Club page.\""
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
+      "line": 22,
+      "severity": "high",
+      "problem": "\"We will always tell you when your box has been sent\" promises a shipping notice. Rule 9 bans this unless confirmed. It is also stiff (\"We will\" instead of \"We'll\"). The same line is in all 3 group versions.",
+      "fix": "Remove it, or confirm that shipping notices go out. If confirmed, write \"We'll let you know when your box is on its way.\""
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
+      "line": 22,
+      "severity": "medium",
+      "problem": "\"It's quick. Press the button, choose your box, and you're in.\" is a claim about sign-up time, and it implies a choice of boxes that isn't confirmed. Rule 9 bans sign-up time claims unless confirmed. The same line is in all 3 group versions.",
+      "fix": "Remove \"It's quick.\" and \"choose your box\" unless the owner confirms them. For example: \"Press the button and we'll take you through the steps.\""
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
+      "line": 14,
+      "severity": "low",
+      "problem": "The fallback line \"There is no deadline from us. The door stays open, and you can join whenever you are ready.\" is a promise about deadlines and sign-up time. It sits inside a [TO CONFIRM] block, so it is only a problem if it ships unconfirmed. The same line is in all 3 group versions.",
+      "fix": "Keep it only if the owner confirms that joining stays open with no close date. Otherwise state the real close date."
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
+      "line": 24,
+      "severity": "low",
+      "problem": "The heading \"I am new to tea. Is this for me?\" has no contraction, which is stiff for this brand's voice (rule 7). The same line is in all 3 group versions.",
+      "fix": "Change it to \"I'm new to tea. Is this for me?\""
+    }
+  ]
+}

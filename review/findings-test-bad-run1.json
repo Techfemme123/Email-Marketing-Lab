@@ -1,0 +1,61 @@
+{
+  "folder": "campaigns/test-bad",
+  "findings": [
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 1,
+      "severity": "high",
+      "problem": "Subject claims the tea detoxes the body (health claim) and uses 'this week only' fake pressure. It is also 55 characters, over the 50 limit.",
+      "fix": "Use a subject of 50 characters or fewer with no health claim or deadline, e.g. 'Meet The Steep Club, friends'."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 2,
+      "severity": "high",
+      "problem": "Preview uses fake pressure ('Last chance', 'before it is gone forever') and implies a deadline, which rule 9 forbids without owner confirmation. It is 69 characters, so the length is fine.",
+      "fix": "Rewrite calmly, e.g. 'A fragrant magical box of tea, with a surprise every month.'"
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 4,
+      "severity": "medium",
+      "problem": "Greeting is 'Dear customer,', which the voice guide bans as too stiff. It also lacks the required {{first_name}}.",
+      "fix": "Use 'Hello {{first_name}},'."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "high",
+      "problem": "Banned claims: 'natural DETOX that cleans your body and cures tiredness' (cure/treat claim, and 'natural' without proof). 'The best tea in the world' is a superlative claim. 'DETOX' is in ALL CAPS and '!!!' is used.",
+      "fix": "Remove the health and superlative claims. Describe the fresh, fragrant ilaichi aroma instead. Use no ALL CAPS and at most one '!'."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 8,
+      "severity": "high",
+      "problem": "'LAST CHANCE: buy now before the offer ends tonight' uses ALL CAPS and the banned 'buy now' pressure words. It also promises an unconfirmed deadline (rule 9).",
+      "fix": "Delete the line, or replace it with a calm invitation to join The Steep Club."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 11,
+      "severity": "medium",
+      "problem": "A second link ([Or shop here](.../shop)) breaks the one-main-link rule.",
+      "fix": "Remove the shop link and keep only [Join The Steep Club](https://kettlebird.example/steep-club)."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 13,
+      "severity": "high",
+      "problem": "The ending is wrong. It uses 'Thanks, The team' instead of 'Until your next cup' and 'Ara, from the Kettlebird team'. It has no P.S. brewing tip and no two-line footer with {{company_address}} and {{unsubscribe_url}}.",
+      "fix": "End with 'Until your next cup,' / 'Ara, from the Kettlebird team' / a P.S. tip such as 'P.S. Crush the ilaichi pods before brewing.' Then add the two-line footer, with two trailing spaces on the first line."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "low",
+      "problem": "The word 'friends' never appears, which rule 5 requires. The copy also has no contractions and sounds stiff and pushy, which breaks rule 7 and the Charming, Warm, Chatty voice.",
+      "fix": "Add 'friends' in the subject or body, and rewrite in a chatty tone with contractions such as 'we're' and 'you'll'."
+    }
+  ]
+}

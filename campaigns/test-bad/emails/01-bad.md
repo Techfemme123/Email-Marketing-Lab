@@ -1,9 +1,9 @@
-Subject: Detox your body with our amazing tea this week only
+Subject: Meet our amazing tea this week only
 Preview: Last chance to grab the magical box before it is gone forever.
 
 Dear customer,
 
-Our tea is a natural DETOX that cleans your body and cures tiredness. It is the best tea in the world!!!
+Our tea is a fragrant tea that cures tiredness. It is the best tea in the world!!!
 
 LAST CHANCE: buy now before the offer ends tonight.
 

@@ -1,39 +1,61 @@
 {
+  "folder": "campaigns/test-bad",
   "findings": [
     {
-      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
-      "line": 30,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
       "severity": "high",
-      "problem": "Promises a reply: \"just reply to this email and a real person will answer.\" Rule 9 bans reply promises unless the owner has confirmed them. The same line is in all 3 group versions (daily-drinkers, gift-buyers, tea-curious).",
-      "fix": "Get the owner to confirm someone monitors replies. If they can't, cut the line or change it to \"Still wondering? Take a look at The Steep Club page.\""
+      "problem": "Claims the tea 'cures tiredness' (banned cure/treat claim) and calls it 'the best tea in the world' (banned superlative). Also uses '!!!'.",
+      "fix": "Remove both claims and the '!!!'. Describe the fresh, fragrant ilaichi aroma instead, with at most one '!'."
     },
     {
-      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
-      "line": 22,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 8,
       "severity": "high",
-      "problem": "\"We will always tell you when your box has been sent\" promises a shipping notice. Rule 9 bans this unless confirmed. It is also stiff (\"We will\" instead of \"We'll\"). The same line is in all 3 group versions.",
-      "fix": "Remove it, or confirm that shipping notices go out. If confirmed, write \"We'll let you know when your box is on its way.\""
+      "problem": "'LAST CHANCE: buy now before the offer ends tonight.' is in ALL CAPS, uses the banned 'buy now' pressure, and promises an unconfirmed deadline (rule 9).",
+      "fix": "Delete the line, or replace it with a calm invitation to join The Steep Club."
     },
     {
-      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
-      "line": 22,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 13,
+      "severity": "high",
+      "problem": "Wrong ending. 'Thanks, The team' replaces 'Until your next cup' and 'Ara, from the Kettlebird team'. There is no P.S. brewing tip and no two-line footer with {{company_address}} and {{unsubscribe_url}}.",
+      "fix": "End with 'Until your next cup,' / 'Ara, from the Kettlebird team' / 'P.S. Crush the ilaichi pods before brewing.' Then add the two-line footer, with two trailing spaces on the first line."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 2,
+      "severity": "high",
+      "problem": "Preview uses fake pressure ('Last chance', 'before it is gone forever') and implies a deadline (rule 9).",
+      "fix": "Rewrite calmly, e.g. 'A fragrant magical box of tea, with a surprise every month.'"
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 1,
       "severity": "medium",
-      "problem": "\"It's quick. Press the button, choose your box, and you're in.\" is a claim about sign-up time, and it implies a choice of boxes that isn't confirmed. Rule 9 bans sign-up time claims unless confirmed. The same line is in all 3 group versions.",
-      "fix": "Remove \"It's quick.\" and \"choose your box\" unless the owner confirms them. For example: \"Press the button and we'll take you through the steps.\""
+      "problem": "Subject still says 'this week only', which is fake pressure and an unconfirmed deadline (rule 9). The length is now fine at 35 characters.",
+      "fix": "Use something like 'Meet The Steep Club, friends'. This also adds the required 'friends'."
     },
     {
-      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
-      "line": 14,
-      "severity": "low",
-      "problem": "The fallback line \"There is no deadline from us. The door stays open, and you can join whenever you are ready.\" is a promise about deadlines and sign-up time. It sits inside a [TO CONFIRM] block, so it is only a problem if it ships unconfirmed. The same line is in all 3 group versions.",
-      "fix": "Keep it only if the owner confirms that joining stays open with no close date. Otherwise state the real close date."
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 4,
+      "severity": "medium",
+      "problem": "Greeting is 'Dear customer,', which the voice guide bans as too stiff. It also lacks the required {{first_name}}.",
+      "fix": "Use 'Hello {{first_name}},'."
     },
     {
-      "file": "campaigns/steep-club-launch/emails/02-questions-answered.md",
-      "line": 24,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 11,
+      "severity": "medium",
+      "problem": "A second link ([Or shop here](.../shop)) breaks the one-main-link rule.",
+      "fix": "Remove the shop link and keep only [Join The Steep Club](https://kettlebird.example/steep-club)."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
       "severity": "low",
-      "problem": "The heading \"I am new to tea. Is this for me?\" has no contraction, which is stiff for this brand's voice (rule 7). The same line is in all 3 group versions.",
-      "fix": "Change it to \"I'm new to tea. Is this for me?\""
+      "problem": "The word 'friends' never appears (rule 5). The copy has no contractions and sounds stiff, which breaks rule 7 and the Charming, Warm, Chatty voice.",
+      "fix": "Add 'friends' and rewrite in a chatty tone with contractions such as 'we're' and 'you'll'."
     }
   ]
 }

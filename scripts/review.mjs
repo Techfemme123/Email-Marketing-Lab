@@ -2,7 +2,7 @@
 // Runs Claude Code headless to review a campaign's emails and saves review/findings.json.
 // Exit code: 0 = no high-severity findings, 1 = at least one high, 2 = script/run error.
 import { spawnSync } from "node:child_process";
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,7 +17,30 @@ if (!folder) {
 const schema = JSON.stringify(
   JSON.parse(readFileSync(resolve(root, "review/findings.schema.json"), "utf8"))
 );
-const prompt = `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. Report only real problems.`;
+let prompt = `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. Report only real problems.`;
+
+// If the last saved review was for this same folder, show Claude its findings
+// so it only reports what is new or still not fixed.
+const outFile = resolve(root, "review/findings.json");
+const same = (a, b) => resolve(root, a).toLowerCase() === resolve(root, b).toLowerCase();
+if (existsSync(outFile)) {
+  try {
+    const prev = JSON.parse(readFileSync(outFile, "utf8"));
+    if (typeof prev.folder === "string" && same(prev.folder, folder) && Array.isArray(prev.findings)) {
+      prompt +=
+        `
+
+Earlier findings for this folder:
+${JSON.stringify(prev.findings, null, 2)}
+
+` +
+        "These are findings from the last review. Report only problems that are new or still not fixed. Don't repeat ones that have been fixed.";
+      console.log(`Using ${prev.findings.length} earlier findings for ${folder}.`);
+    }
+  } catch {
+    // unreadable file: treat as a fresh review
+  }
+}
 const args = [
   "-p", prompt,
   "--output-format", "json",
@@ -75,9 +98,8 @@ if (!data || !Array.isArray(data.findings)) {
   process.exit(2);
 }
 
-const outFile = resolve(root, "review/findings.json");
 mkdirSync(dirname(outFile), { recursive: true });
-writeFileSync(outFile, JSON.stringify(data, null, 2) + "\n");
+writeFileSync(outFile, JSON.stringify({ folder, findings: data.findings }, null, 2) + "\n");
 
 const count = { high: 0, medium: 0, low: 0 };
 for (const f of data.findings) count[f.severity] = (count[f.severity] || 0) + 1;

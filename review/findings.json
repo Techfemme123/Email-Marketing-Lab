@@ -1,61 +1,40 @@
 {
-  "folder": "campaigns/test-bad",
+  "folder": "campaigns/steep-club-launch",
   "findings": [
     {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 6,
-      "severity": "high",
-      "problem": "Claims the tea 'cures tiredness' (banned cure/treat claim) and calls it 'the best tea in the world' (banned superlative). Also uses '!!!'.",
-      "fix": "Remove both claims and the '!!!'. Describe the fresh, fragrant ilaichi aroma instead, with at most one '!'."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 8,
-      "severity": "high",
-      "problem": "'LAST CHANCE: buy now before the offer ends tonight.' is in ALL CAPS, uses the banned 'buy now' pressure, and promises an unconfirmed deadline (rule 9).",
-      "fix": "Delete the line, or replace it with a calm invitation to join The Steep Club."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 13,
-      "severity": "high",
-      "problem": "Wrong ending. 'Thanks, The team' replaces 'Until your next cup' and 'Ara, from the Kettlebird team'. There is no P.S. brewing tip and no two-line footer with {{company_address}} and {{unsubscribe_url}}.",
-      "fix": "End with 'Until your next cup,' / 'Ara, from the Kettlebird team' / 'P.S. Crush the ilaichi pods before brewing.' Then add the two-line footer, with two trailing spaces on the first line."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 2,
-      "severity": "high",
-      "problem": "Preview uses fake pressure ('Last chance', 'before it is gone forever') and implies a deadline (rule 9).",
-      "fix": "Rewrite calmly, e.g. 'A fragrant magical box of tea, with a surprise every month.'"
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 1,
-      "severity": "medium",
-      "problem": "Subject still says 'this week only', which is fake pressure and an unconfirmed deadline (rule 9). The length is now fine at 35 characters.",
-      "fix": "Use something like 'Meet The Steep Club, friends'. This also adds the required 'friends'."
-    },
-    {
-      "file": "campaigns/test-bad/emails/01-bad.md",
+      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
       "line": 4,
-      "severity": "medium",
-      "problem": "Greeting is 'Dear customer,', which the voice guide bans as too stiff. It also lacks the required {{first_name}}.",
-      "fix": "Use 'Hello {{first_name}},'."
+      "severity": "high",
+      "problem": "Rule 8: every one of the 16 email files still has the `> Draft notes` block. Most also have unfilled [TO CONFIRM] or [ADD] placeholders. 01 has them at lines 16 and 19. 02 has them at lines 13, 16, 19, 22 and 28. 03 has them at lines 12, 15 and 21, including [ADD PHOTO] and [ADD] tasting notes. 04 has one at line 14. The same lines exist in the daily-drinkers, gift-buyers and tea-curious copies. None of these are ready to send.",
+      "fix": "Fill each placeholder with facts you've confirmed, or cut that section. Then delete the Draft notes block from every file. Do this in the base emails first, then re-run /personalize so the group copies match."
     },
     {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 11,
+      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
+      "line": 14,
       "severity": "medium",
-      "problem": "A second link ([Or shop here](.../shop)) breaks the one-main-link rule.",
-      "fix": "Remove the shop link and keep only [Join The Steep Club](https://kettlebird.example/steep-club)."
+      "problem": "Rule 9: the fallback sentence \"There is no deadline from us. The door stays open, and you can join whenever you are ready.\" is a promise about deadlines and sign-up time. The owner hasn't confirmed it. It's the line the note tells you to keep if there's no close date. The same line is in all 4 versions of email 4.",
+      "fix": "Ask the owner whether joining really stays open. If yes, keep the line. If not, remove it and say nothing about timing."
     },
     {
-      "file": "campaigns/test-bad/emails/01-bad.md",
-      "line": 6,
+      "file": "campaigns/steep-club-launch/groups/gift-buyers/emails/01-doors-open.md",
+      "line": 10,
+      "severity": "medium",
+      "problem": "The gift-buyers copies suggest gifting is available: \"a loved one opening a box from you\", \"whoever you're thinking of sharing a box with\" and \"a box might still make someone smile\". The base emails mark the gift option as [TO CONFIRM] (02 line 28), so gifting isn't confirmed. The same applies to gift-buyers 01 line 26, 02 line 10, 03 lines 10 and 18, and 04 lines 10 and 18.",
+      "fix": "Keep the gift framing only once the owner confirms there's a gift option. Otherwise reword it to something like sharing tea with someone."
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
+      "line": 12,
       "severity": "low",
-      "problem": "The word 'friends' never appears (rule 5). The copy has no contractions and sounds stiff, which breaks rule 7 and the Charming, Warm, Chatty voice.",
-      "fix": "Add 'friends' and rewrite in a chatty tone with contractions such as 'we're' and 'you'll'."
+      "problem": "Rule 7: stiff phrasing in a chatty voice. Examples are \"we have been telling you\" (line 12), \"There is no deadline from us\" and \"you are ready\" (line 14). The other emails use contractions throughout, so these stand out. The same lines are in the three group copies of email 4.",
+      "fix": "Change to \"we've been telling you\", \"There's no deadline from us\" and \"whenever you're ready\"."
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
+      "line": 22,
+      "severity": "low",
+      "problem": "\"Press the button, choose your box, and you're in\" implies there's a choice of boxes. Line 13 also says ilaichi \"runs through the club\", which promises ilaichi in the boxes. The first box contents and price are still [TO CONFIRM] (lines 16 and 19), and email 03 says the contents are a surprise. The same lines are in all 4 versions of email 1.",
+      "fix": "Check there really is a choice of box and that ilaichi is in every box. If not, say \"Press the button and you're in\" and soften the ilaichi line."
     }
   ]
 }

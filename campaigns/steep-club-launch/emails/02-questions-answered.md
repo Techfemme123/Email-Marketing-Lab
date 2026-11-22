@@ -19,7 +19,7 @@ One magical box with fresh, fragrant tea and a surprise inside. [TO CONFIRM: box
 [TO CONFIRM: only say it is easy to pause or cancel if that is true, and explain how]
 
 **When will my box arrive?**
-[TO CONFIRM: first ship timing. Do not promise an exact delivery date.] We will always tell you when your box has been sent.
+[TO CONFIRM: first ship timing. Do not promise an exact delivery date.]
 
 **I am new to tea. Is this for me?**
 Yes. There's nothing to learn first. You only need a kettle and a cup.
@@ -27,7 +27,7 @@ Yes. There's nothing to learn first. You only need a kettle and a cup.
 **Is it a good gift?**
 It can be. [TO CONFIRM: gift option details]
 
-Still wondering? Just reply to this email and a real person will answer.
+Still wondering? We'd love for you to take a closer look below.
 
 [See The Steep Club](https://kettlebird.example/steep-club)
 

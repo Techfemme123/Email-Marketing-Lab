@@ -2,39 +2,18 @@
   "folder": "campaigns/steep-club-launch",
   "findings": [
     {
-      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
-      "line": 4,
-      "severity": "high",
-      "problem": "Rule 8: every one of the 16 email files still has the `> Draft notes` block. Most also have unfilled [TO CONFIRM] or [ADD] placeholders. 01 has them at lines 16 and 19. 02 has them at lines 13, 16, 19, 22 and 28. 03 has them at lines 12, 15 and 21, including [ADD PHOTO] and [ADD] tasting notes. 04 has one at line 14. The same lines exist in the daily-drinkers, gift-buyers and tea-curious copies. None of these are ready to send.",
-      "fix": "Fill each placeholder with facts you've confirmed, or cut that section. Then delete the Draft notes block from every file. Do this in the base emails first, then re-run /personalize so the group copies match."
-    },
-    {
-      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
-      "line": 14,
-      "severity": "medium",
-      "problem": "Rule 9: the fallback sentence \"There is no deadline from us. The door stays open, and you can join whenever you are ready.\" is a promise about deadlines and sign-up time. The owner hasn't confirmed it. It's the line the note tells you to keep if there's no close date. The same line is in all 4 versions of email 4.",
-      "fix": "Ask the owner whether joining really stays open. If yes, keep the line. If not, remove it and say nothing about timing."
-    },
-    {
-      "file": "campaigns/steep-club-launch/groups/gift-buyers/emails/01-doors-open.md",
-      "line": 10,
-      "severity": "medium",
-      "problem": "The gift-buyers copies suggest gifting is available: \"a loved one opening a box from you\", \"whoever you're thinking of sharing a box with\" and \"a box might still make someone smile\". The base emails mark the gift option as [TO CONFIRM] (02 line 28), so gifting isn't confirmed. The same applies to gift-buyers 01 line 26, 02 line 10, 03 lines 10 and 18, and 04 lines 10 and 18.",
-      "fix": "Keep the gift framing only once the owner confirms there's a gift option. Otherwise reword it to something like sharing tea with someone."
-    },
-    {
-      "file": "campaigns/steep-club-launch/emails/04-last-note.md",
-      "line": 12,
-      "severity": "low",
-      "problem": "Rule 7: stiff phrasing in a chatty voice. Examples are \"we have been telling you\" (line 12), \"There is no deadline from us\" and \"you are ready\" (line 14). The other emails use contractions throughout, so these stand out. The same lines are in the three group copies of email 4.",
-      "fix": "Change to \"we've been telling you\", \"There's no deadline from us\" and \"whenever you're ready\"."
-    },
-    {
-      "file": "campaigns/steep-club-launch/emails/01-doors-open.md",
+      "file": "campaigns/steep-club-launch/emails/01-doors-open.md (also the 3 group versions of email 01)",
       "line": 22,
       "severity": "low",
-      "problem": "\"Press the button, choose your box, and you're in\" implies there's a choice of boxes. Line 13 also says ilaichi \"runs through the club\", which promises ilaichi in the boxes. The first box contents and price are still [TO CONFIRM] (lines 16 and 19), and email 03 says the contents are a surprise. The same lines are in all 4 versions of email 1.",
-      "fix": "Check there really is a choice of box and that ilaichi is in every box. If not, say \"Press the button and you're in\" and soften the ilaichi line."
+      "problem": "\"It's quick. Press the button, choose your box, and you're in.\" says how long sign-up takes. Rule 9 bans promises about sign-up time unless the owner has confirmed them, and nothing in the file shows that confirmation.",
+      "fix": "Either get the owner to confirm it, or drop \"It's quick.\" (for example: \"Press the button, choose your box, and you're in.\"). Make the same change in groups/*/emails/01-doors-open.md."
+    },
+    {
+      "file": "campaigns/steep-club-launch/emails/04-last-note.md (also the 3 group versions of email 04)",
+      "line": 14,
+      "severity": "low",
+      "problem": "The fallback line \"There is no deadline from us. The door stays open, and you can join whenever you are ready.\" promises something about deadlines and sign-up time. Rule 9 requires owner confirmation for that. The [TO CONFIRM] tag flags the close date, but not this fallback sentence.",
+      "fix": "Before sending, have the owner confirm that joining stays open with no deadline. If they don't, cut the fallback line, or state the real close date. Make the same change in the group versions."
     }
   ]
 }
